@@ -15,25 +15,22 @@
             <!-- Left Menu -->
             <ul class="nav-menu left">
                 <li class="nav-item active" data-target="home"><a href="#home">Home</a></li>
-                <span class="nav-separator">/</span>
+                <li class="nav-separator" aria-hidden="true">/</li>
                 <li class="nav-item" data-target="portfolio"><a href="#portfolio">Portfolio</a></li>
             </ul>
 
             <!-- Logo (Center) -->
             <div class="nav-logo">
                 <a href="#home" class="logo-link" data-target="home">
-                    <!-- Elegant Zwicky Film Logo SVG -->
-                    <svg class="logo-svg" viewBox="0 0 220 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <text x="50%" y="45" font-family="'Cormorant Garamond', serif" font-size="34" letter-spacing="0.1em" fill="#1e2522" text-anchor="middle" font-weight="400">ZWICKY</text>
-                        <text x="50%" y="62" font-family="'Pinyon Script', cursive" font-size="28" fill="#c1aa87" text-anchor="middle">film</text>
-                    </svg>
+                    <span class="logo-title">ZWICKY</span>
+                    <span class="logo-subtitle">film</span>
                 </a>
             </div>
 
             <!-- Right Menu -->
             <ul class="nav-menu right">
                 <li class="nav-item" data-target="about"><a href="#about">About</a></li>
-                <span class="nav-separator">/</span>
+                <li class="nav-separator" aria-hidden="true">/</li>
                 <li class="nav-item" data-target="contact"><a href="#contact">Contact</a></li>
             </ul>
 
@@ -206,10 +203,12 @@
                 <!-- Split Content: Story & Details -->
                 <div class="project-story-section">
                     <div class="project-story-left reveal">
-                        <span class="script-text">Their Story</span>
-                        <h3 style="margin-top: 0.5rem;">An Intimate Celebration</h3>
+                        <div class="story-title-layered">
+                            <span class="title-main">THEIR</span>
+                            <span class="title-sub">Story</span>
+                        </div>
                         <p>An intimate villa wedding surrounded by tropical gardens, Latin rhythms, warm breezes, and clear blue skies. The entire day — from morning preparations to the last dance — was captured on film. The camera was invisible, the emotions were real.</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p>Every wedding we document is a reflection of the couple's unique journey. We spend time getting to know you — your story, your personalities, the small details that make your relationship extraordinary — so that when we press record, every frame carries intention and emotional truth.</p>
                     </div>
 
                     <div class="project-details-card reveal">
@@ -633,11 +632,10 @@
     <!-- --- Footer --- -->
     <footer class="site-footer">
         <div class="footer-logo">
-            <!-- Elegant Footer Logo SVG -->
-            <svg class="logo-svg" viewBox="0 0 220 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 55px;">
-                <text x="50%" y="45" font-family="'Cormorant Garamond', serif" font-size="34" letter-spacing="0.1em" fill="#fbf9f4" text-anchor="middle" font-weight="400">ZWICKY</text>
-                <text x="50%" y="62" font-family="'Pinyon Script', cursive" font-size="28" fill="#c1aa87" text-anchor="middle">film</text>
-            </svg>
+            <a href="#home" class="logo-link logo-light" data-target="home">
+                <span class="logo-title">ZWICKY</span>
+                <span class="logo-subtitle">film</span>
+            </a>
         </div>
 
         <ul class="footer-nav">
