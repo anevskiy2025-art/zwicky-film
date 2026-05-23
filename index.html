@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwicky Film | Premium Wedding Videography & Cinematic Stories</title>
+    <meta name="description" content="Capture the genuine emotion, beauty, and magic of your wedding day with Zwicky Film. Premium wedding videography based in North Carolina & worldwide.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- --- Header / Navigation --- -->
+    <header class="site-header" id="siteHeader">
+        <nav class="nav-container">
+            <!-- Left Menu -->
+            <ul class="nav-menu left">
+                <li class="nav-item active" data-target="home"><a href="#home">Home</a></li>
+                <span class="nav-separator">/</span>
+                <li class="nav-item" data-target="portfolio"><a href="#portfolio">Portfolio</a></li>
+            </ul>
+
+            <!-- Logo (Center) -->
+            <div class="nav-logo">
+                <a href="#home" class="logo-link" data-target="home">
+                    <!-- Elegant Zwicky Film Logo SVG -->
+                    <svg class="logo-svg" viewBox="0 0 220 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50%" y="45" font-family="'Cormorant Garamond', serif" font-size="34" letter-spacing="0.1em" fill="#1e2522" text-anchor="middle" font-weight="400">ZWICKY</text>
+                        <text x="50%" y="62" font-family="'Pinyon Script', cursive" font-size="28" fill="#c1aa87" text-anchor="middle">film</text>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Right Menu -->
+            <ul class="nav-menu right">
+                <li class="nav-item" data-target="about"><a href="#about">About</a></li>
+                <span class="nav-separator">/</span>
+                <li class="nav-item" data-target="contact"><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Navigation Menu Drawer -->
+        <ul class="nav-menu-mobile" id="navMenuMobile">
+            <li data-target="home"><a href="#home">Home</a></li>
+            <li data-target="portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li data-target="about"><a href="#about">About</a></li>
+            <li data-target="contact"><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- --- Page Section 1: Home (includes Portfolio Grid) --- -->
+    <div id="homePage" class="page-section active">
+        
+        <!-- Hero Section -->
+        <section class="hero-banner">
+            <!-- Background Video Loop -->
+            <video class="hero-video-bg" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200">
+                <source src="https://player.vimeo.com/external/435674703.sd.mp4?s=782f9d5045a8b79ebdbff56d4b4a1b02660d5bfa&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content reveal">
+                <span class="hero-subtitle">Mountain Wedding / Summit Cross Mountain, NC</span>
+                <h1 class="hero-title">Alexandra & Steven</h1>
+                <p class="hero-desc">A sweeping mountain celebration with 150 guests. Golden-hour vows overlooking the Blue Ridge.</p>
+                <a href="#project-detail" class="btn btn-primary" data-target="project-detail">View Film Story</a>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Grid -->
+        <section class="portfolio-section" id="portfolioSection">
+            <div class="container">
+                <div class="section-intro reveal">
+                    <span class="script-text">Portfolio</span>
+                    <h2>Every Film is a Couple's Story</h2>
+                    <p>Click any film to watch the full highlight.</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <ul class="portfolio-filter reveal">
+                    <li><button class="filter-btn active" data-filter="all">All Films</button></li>
+                    <li><button class="filter-btn" data-filter="mountain">Mountain</button></li>
+                    <li><button class="filter-btn" data-filter="destination">Destination</button></li>
+                    <li><button class="filter-btn" data-filter="classic">Classic</button></li>
+                    <li><button class="filter-btn" data-filter="intimate">Intimate</button></li>
+                </ul>
+
+                <!-- Grid -->
+                <div class="portfolio-grid">
+                    
+                    <!-- Card 1 -->
+                    <div class="portfolio-card reveal" data-category="mountain" data-video="336812686" data-project-title="Alexandra & Steven">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800" alt="Alexandra & Steven Mountain Wedding">
+                            <span class="card-category">Mountain</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Alexandra & Steven</h3>
+                            <span class="card-location">Summit Cross Mountain, NC</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="portfolio-card reveal" data-category="destination" data-video="242858172" data-project-title="Nicole & Josh">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&q=80&w=800" alt="Nicole & Josh Destination Wedding">
+                            <span class="card-category">Destination</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Nicole & Josh</h3>
+                            <span class="card-location">Villa Woodbine, Miami</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="portfolio-card reveal" data-category="classic" data-video="182823023" data-project-title="Sophia & Ethan">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&q=80&w=800" alt="Sophia & Ethan Classic Wedding">
+                            <span class="card-category">Classic</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Sophia & Ethan</h3>
+                            <span class="card-location">The Biltmore, Asheville</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="portfolio-card reveal" data-category="intimate" data-video="229330960" data-project-title="Isabella & Liam">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&q=80&w=800" alt="Isabella & Liam Intimate Wedding">
+                            <span class="card-category">Intimate</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Isabella & Liam</h3>
+                            <span class="card-location">Redwoods Forest, CA</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="portfolio-card reveal" data-category="mountain" data-video="142994464" data-project-title="Mia & Lucas">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800" alt="Mia & Lucas Mountain Lake Wedding">
+                            <span class="card-category">Mountain</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Mia & Lucas</h3>
+                            <span class="card-location">Lake Tahoe, NV</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="portfolio-card reveal" data-category="destination" data-video="268953151" data-project-title="Charlotte & James">
+                        <div class="card-media">
+                            <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&q=80&w=800" alt="Charlotte & James Destination Wedding">
+                            <span class="card-category">Destination</span>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Charlotte & James</h3>
+                            <span class="card-location">Amalfi Coast, Italy</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Call to Action -->
+                <div class="portfolio-cta reveal">
+                    <a href="#contact" class="btn btn-secondary" data-target="contact">Check My Date</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- --- Page Section 2: Project Detail (Alexandra & Steven Detail View) --- -->
+    <div id="projectDetailPage" class="page-section">
+        <section class="project-detail-section">
+            <div class="container">
+                
+                <!-- Back Button -->
+                <div class="btn-back-portfolio" data-target="home">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    Back to Portfolio
+                </div>
+
+                <!-- Title Header -->
+                <div class="project-header-info reveal">
+                    <span class="hero-subtitle">Mountain Wedding / Summit Cross Mountain, NC</span>
+                    <h2 class="hero-title" style="color: var(--color-text-dark); font-size: 3rem;">Alexandra & Steven</h2>
+                    <p class="hero-desc" style="color: var(--color-text-muted); max-width: 700px;">A sweeping mountain celebration with 150 guests. Golden-hour vows overlooking the Blue Ridge.</p>
+                </div>
+
+                <!-- Video Player Container -->
+                <div class="project-hero-player reveal">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=1200" alt="Alexandra & Steven Wedding Video Cover">
+                    <button class="play-video-btn" data-video="336812686" aria-label="Play Wedding Film">
+                        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                </div>
+
+                <!-- Split Content: Story & Details -->
+                <div class="project-story-section">
+                    <div class="project-story-left reveal">
+                        <span class="script-text">Their Story</span>
+                        <h3 style="margin-top: 0.5rem;">An Intimate Celebration</h3>
+                        <p>An intimate villa wedding surrounded by tropical gardens, Latin rhythms, warm breezes, and clear blue skies. The entire day — from morning preparations to the last dance — was captured on film. The camera was invisible, the emotions were real.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+
+                    <div class="project-details-card reveal">
+                        <div class="project-detail-row">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            </div>
+                            <div class="detail-text">
+                                <h4>Deliverables</h4>
+                                <p>15 Minute Cinematic Highlight</p>
+                            </div>
+                        </div>
+
+                        <div class="project-detail-row">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="detail-text">
+                                <h4>Location</h4>
+                                <p>Summit Cross Mountain, NC</p>
+                            </div>
+                        </div>
+
+                        <div class="project-detail-row">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            </div>
+                            <div class="detail-text">
+                                <h4>Style</h4>
+                                <p>Mountain / Scenic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collage Layout Section -->
+                <div class="project-collage-section">
+                    <div class="collage-images reveal">
+                        <div class="collage-img collage-img-1">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600" alt="Wedding Details">
+                        </div>
+                        <div class="collage-img collage-img-2">
+                            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=600" alt="Wedding Ceremony Venue">
+                        </div>
+                    </div>
+                    
+                    <div class="collage-text-right reveal">
+                        <span class="script-text">Natural coverage</span>
+                        <h3>Real Emotions</h3>
+                        <p>At our core, wedding films are about the people. The laughter, the tears, the quiet glances when no one is looking. We aim to blend into the background so you can remain fully present in the moment.</p>
+                        <p>We work closely with couples to ensure we capture the essence of their unique day without introducing staged poses or artificial lighting, letting the organic atmosphere shine through the lens.</p>
+                    </div>
+                </div>
+
+                <!-- Call to Action Banner Row -->
+                <div class="cta-banner-row reveal">
+                    <div class="cta-banner-text">
+                        <h3>Want a film like this?</h3>
+                        <p>Let's talk about capturing your wedding day.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" data-target="contact" style="background-color: var(--color-bg-light); color: var(--color-text-dark);">Request a Quote</a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- --- Page Section 3: About (Bio, Team, Process) --- -->
+    <div id="aboutPage" class="page-section">
+        <section class="about-section">
+            <div class="container">
+                
+                <!-- Split Intro -->
+                <div class="about-intro-split">
+                    <div class="about-intro-text reveal">
+                        <span class="script-text">Hi, I'm Denis —</span>
+                        <h2>The One Who'll Be Right There On Your Day</h2>
+                        <p>My journey into videography started with nature and landscapes, learning to capture light, movement, and meaningful details. Over the years, I realized that the most breathtaking landscapes are the ones filled with human connection.</p>
+                        <p>I focus on natural coverage, candid interactions, and rich visual styling. No forced poses, no heavy direction. Just your genuine chemistry captured in cinematic format.</p>
+                    </div>
+                    <div class="about-intro-img reveal">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=600" alt="Denis - Lead Videographer">
+                    </div>
+                </div>
+
+                <!-- Stats Row -->
+                <div class="stats-banner reveal">
+                    <div class="stat-item">
+                        <div class="stat-number">480+</div>
+                        <div class="stat-label">Weddings Filmed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7+</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">18+</div>
+                        <div class="stat-label">Countries Visited</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Five-Star Reviews</div>
+                    </div>
+                </div>
+
+                <!-- Passionate Team Grid -->
+                <div class="section-intro reveal">
+                    <span class="script-text">Our Team</span>
+                    <h2>Passionate About Your Story</h2>
+                    <p>We work as a small, specialized team to ensure consistency, quality, and complete coverage.</p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Team 1 -->
+                    <div class="team-card reveal">
+                        <div class="team-avatar">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" alt="Denis Profile">
+                        </div>
+                        <h3 class="team-name">Denis</h3>
+                        <span class="team-role">Lead Videographer</span>
+                        <p class="team-bio">7+ years of experience, nature enthusiast, coffee addict, and dedicated visual storyteller.</p>
+                    </div>
+
+                    <!-- Team 2 -->
+                    <div class="team-card reveal">
+                        <div class="team-avatar">
+                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=200" alt="Sam Profile">
+                        </div>
+                        <h3 class="team-name">Sam</h3>
+                        <span class="team-role">Second Shooter</span>
+                        <p class="team-bio">3+ years behind the lens, detail-oriented coordinator, and expert in gimbal tracking.</p>
+                    </div>
+
+                    <!-- Team 3 -->
+                    <div class="team-card reveal">
+                        <div class="team-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200" alt="Helen Profile">
+                        </div>
+                        <h3 class="team-name">Helen</h3>
+                        <span class="team-role">Lead Editor & Colorist</span>
+                        <p class="team-bio">4+ years in post-production, specialized in warm tones, audio design, and emotional pacing.</p>
+                    </div>
+                </div>
+
+                <!-- Process Grid -->
+                <div class="section-intro reveal">
+                    <span class="script-text">Process</span>
+                    <h2>How We Work Together</h2>
+                    <p>Five simple steps to turn your wedding memories into a timeless cinematic archive.</p>
+                </div>
+
+                <div class="process-split">
+                    <div class="process-steps reveal">
+                        <!-- Step 1 -->
+                        <div class="process-step-item">
+                            <div class="step-num">01</div>
+                            <div class="step-content">
+                                <h4>Inquiry</h4>
+                                <p>Reach out to check availability for your date and share details about your wedding day plans.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="process-step-item">
+                            <div class="step-num">02</div>
+                            <div class="step-content">
+                                <h4>Booking</h4>
+                                <p>Select your coverage package, sign the digital agreement, and lock in the date with a 30% retainer fee.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="process-step-item">
+                            <div class="step-num">03</div>
+                            <div class="step-content">
+                                <h4>Preparation</h4>
+                                <p>We'll have a detailed preparation call 4 weeks before your wedding to review timelines and special events.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="process-step-item">
+                            <div class="step-num">04</div>
+                            <div class="step-content">
+                                <h4>Your Wedding Day</h4>
+                                <p>We arrive on-site, blend with your guests, and capture every authentic moment while keeping things completely relaxed.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="process-step-item">
+                            <div class="step-num">05</div>
+                            <div class="step-content">
+                                <h4>Delivery</h4>
+                                <p>Your polished highlights and feature film are prepared and delivered digitally in 6 to 10 weeks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-collage reveal">
+                        <div class="proc-img proc-img-1">
+                            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600" alt="Camera equipment setup">
+                        </div>
+                        <div class="proc-img proc-img-2">
+                            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=600" alt="Wedding filming outdoors">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- --- Page Section 4: Contact (Form & Direct Contacts) --- -->
+    <div id="contactPage" class="page-section">
+        <section class="contact-section">
+            <div class="container">
+                
+                <div class="contact-split">
+                    <!-- Info Side -->
+                    <div class="contact-info-side reveal">
+                        
+                        <!-- Testimonial Quote -->
+                        <div class="testimonial-quote">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            <p class="quote-text">"Denis captured moments we didn't even know were happening. We get the exact same goosebumps on every anniversary."</p>
+                            <span class="quote-author">— Alexandra & Steven, Charlotte</span>
+                        </div>
+
+                        <!-- Quick Answers -->
+                        <div class="contact-quick-info">
+                            <h3 class="quick-title">Quick Answers</h3>
+                            <div class="quick-grid">
+                                <div class="quick-item">
+                                    <h4>Response Time</h4>
+                                    <p>Within 24 hours</p>
+                                </div>
+                                <div class="quick-item">
+                                    <h4>Deposit Required</h4>
+                                    <p>30% to secure your date</p>
+                                </div>
+                                <div class="quick-item">
+                                    <h4>Travel Policy</h4>
+                                    <p>Charlotte, NC, FL + Worldwide</p>
+                                </div>
+                                <div class="quick-item">
+                                    <h4>Film Timeline</h4>
+                                    <p>Films ready in 4-10 weeks</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Direct contacts -->
+                        <div class="direct-contact">
+                            <h4>Prefer Direct?</h4>
+                            <div class="direct-links">
+                                <a href="mailto:hello@zwickywed.com">hello@zwickywed.com</a>
+                                <a href="https://instagram.com/zwickywed" target="_blank" rel="noopener">@zwickywed</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Form Side -->
+                    <div class="contact-form-side reveal">
+                        <span class="script-text">Get in Touch</span>
+                        <h2>Check Your Date</h2>
+                        <p>Fill out the form below — I'll respond within 24 hours with availability and custom package options.</p>
+
+                        <form id="bookingForm" class="booking-form" novalidate>
+                            <div class="form-grid">
+                                
+                                <div class="form-group">
+                                    <label for="fullName" class="form-label">Full Name *</label>
+                                    <input type="text" id="fullName" class="form-input" placeholder="Your name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="emailAddress" class="form-label">Email Address *</label>
+                                    <input type="email" id="emailAddress" class="form-input" placeholder="hello@yourdomain.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="weddingDate" class="form-label">Wedding Date *</label>
+                                    <input type="date" id="weddingDate" class="form-input" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="venueLocation" class="form-label">Venue / City</label>
+                                    <input type="text" id="venueLocation" class="form-input" placeholder="E.g., Villa Woodbine, Miami">
+                                </div>
+
+                                <div class="form-group checkbox-group full-width">
+                                    <input type="checkbox" id="dateNotSet">
+                                    <label for="dateNotSet">Wedding date is not set yet</label>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="aboutDay" class="form-label">About Your Day</label>
+                                    <textarea id="aboutDay" class="form-input" placeholder="Tell us about your plans, style, and what you're most excited about..."></textarea>
+                                </div>
+
+                                <div class="form-group full-width" style="margin-top: 1rem;">
+                                    <button type="submit" class="btn btn-primary">Send Request</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- --- FAQ Section (Common questions, shown on detail/about/contact) --- -->
+    <section class="faq-section reveal">
+        <div class="container">
+            <div class="section-intro">
+                <span class="script-text">FAQ</span>
+                <h2>Common Questions</h2>
+                <p>Everything you need to know about wedding film coverage.</p>
+            </div>
+
+            <div class="faq-list">
+                
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question-btn">
+                        <h3>How much does it cost?</h3>
+                        <div class="faq-icon-indicator">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Our custom coverage packages start at $2,550 for 6-hour continuous wedding coverage. Final pricing details depend on location logistics, additional hours, multi-day shoots, and custom options. Reach out via our booking form to receive a detailed brochure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question-btn">
+                        <h3>How long until delivery?</h3>
+                        <div class="faq-icon-indicator">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Quality post-production takes time and care. Typically, a 30-second teaser trailer is shared within 2 weeks, while your finalized highlight film and ceremony documents are delivered in 6 to 10 weeks via a premium digital download portal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question-btn">
+                        <h3>Do you require a deposit?</h3>
+                        <div class="faq-icon-indicator">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Yes. A 30% non-refundable retainer fee and a digitally signed service contract are required to officially secure your date on our calendar. The remaining balance is due exactly 30 days before your wedding ceremony.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question-btn">
+                        <h3>Do you travel?</h3>
+                        <div class="faq-icon-indicator">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Absolutely. We are based in Charlotte, North Carolina, and routinely document celebrations throughout NC, SC, Florida, and worldwide destination spots. All destination travel costs (flights, lodging, rentals) are integrated directly into your custom proposal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question-btn">
+                        <h3>Can we request edits?</h3>
+                        <div class="faq-icon-indicator">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Every wedding package includes one round of complimentary structural adjustments (music tweaks, sequence alterations, color notes) within 14 days of digital delivery, ensuring your finished films align perfectly with your dream vision.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <button class="faq-question-btn">
+                        <h3>Do you offer photography too?</h3>
+                        <div class="faq-icon-indicator">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>We specialize purely in motion film and sound design. However, we have a curated list of trusted local and national wedding photographers we partner with regularly. We are happy to share recommendations to help you assemble a dream creative crew.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Footer --- -->
+    <footer class="site-footer">
+        <div class="footer-logo">
+            <!-- Elegant Footer Logo SVG -->
+            <svg class="logo-svg" viewBox="0 0 220 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 55px;">
+                <text x="50%" y="45" font-family="'Cormorant Garamond', serif" font-size="34" letter-spacing="0.1em" fill="#fbf9f4" text-anchor="middle" font-weight="400">ZWICKY</text>
+                <text x="50%" y="62" font-family="'Pinyon Script', cursive" font-size="28" fill="#c1aa87" text-anchor="middle">film</text>
+            </svg>
+        </div>
+
+        <ul class="footer-nav">
+            <li data-target="home"><a href="#home">Home</a></li>
+            <li data-target="portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li data-target="about"><a href="#about">About</a></li>
+            <li data-target="contact"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <p class="footer-desc">My journey into videography started with nature and landscapes, learning to capture light, movement, and meaningful details. We document your celebration with a commitment to authenticity and cinematic artistry.</p>
+
+        <p class="footer-copy">&copy; 2026 Zwicky Film. All rights reserved. Made with love for premium weddings.</p>
+    </footer>
+
+    <!-- --- Cinematic Video Overlay Modal (Pop-up Player) --- -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <button class="video-modal-close" id="videoModalClose">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                Close Player
+            </button>
+            <div class="video-iframe-container" id="videoIframeContainer">
+                <!-- Iframe injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- --- Toast Notification Overlay --- -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
